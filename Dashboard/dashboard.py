@@ -1,10 +1,12 @@
+import os
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Membaca data dari file CSV
-data = pd.read_csv('main_data.csv')
+script_dir = os.path.dirname(os.path.realpath(__file__))
+data= pd.read_csv(f"{script_dir}/main_data.csv")
 
 # Title dashboard
 st.title("Dashboard Penyewaan Sepeda")
