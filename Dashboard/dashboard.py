@@ -66,6 +66,7 @@ plt.title(f'Tren Penyewaan Sepeda Berdasarkan Bulan untuk Tahun {", ".join(map(s
 plt.xlabel('Bulan')
 plt.ylabel('Rata-rata Penyewaan Sepeda')
 plt.xticks(rotation=45)
+plt.ylim(bottom=0)
 st.pyplot(plt)
 
 
